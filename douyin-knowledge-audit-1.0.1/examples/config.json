@@ -1,0 +1,8 @@
+{
+  "space": "douyin-favorites",
+  "maxItems": 800,
+  "maxRounds": 40,
+  "pageTotal": 3095,
+  "out": "/absolute/path/to/douyin-favorites.json",
+  "note": "替换为自己可写的绝对路径后抄入 CONFIG。不要使用 ~，脚本不会自动展开。pageTotal 填当前页面实际总数。"
+}

@@ -1,0 +1,27 @@
+{
+  "_note": "采集产物样例，真实运行输出裁到 2 条。用来看字段形状，不要照抄数值。",
+  "collectedAt": "2026-10-27T05:55:49.666Z",
+  "space": "douyin-favorites",
+  "rounds": 1,
+  "stalled": false,
+  "collected": 2,
+  "pageTotal": 3095,
+  "coveragePercent": 0.1,
+  "emptyAuthor": 0,
+  "items": [
+    {
+      "id": "7700841574451760420",
+      "author": "开物",
+      "desc": "这条视频的所有声音，全是同一个模型捏出来的！想要什么声音，写一句描述就行",
+      "like": "2684",
+      "url": "https://www.douyin.com/video/7700841574451760420"
+    },
+    {
+      "id": "7700123456789012345",
+      "author": "李一帆",
+      "desc": "15秒四个接缝，怎么让上下镜接得上 #剪辑 #分镜",
+      "like": "8517",
+      "url": "https://www.douyin.com/video/7700123456789012345"
+    }
+  ]
+}

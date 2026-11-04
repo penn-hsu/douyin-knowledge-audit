@@ -1,0 +1,32 @@
+{
+  "name": "douyin-knowledge-audit",
+  "version": "1.0.1",
+  "title": "抖音知识盘查",
+  "author": "龙虾纪元-世博与舒舒",
+  "dependencies": [
+    "ego lite ≥ 0.6（提供 ego-browser CLI 与内嵌 Node 运行时，需自行安装）",
+    "Python 3.9+（仅用于脚本 classify.py，无第三方依赖）",
+    "一个已登录的抖音账号（登录态由 ego lite 继承，本包不保存任何凭证）"
+  ],
+  "permissions": [
+    "读取本人账号已登录可见的收藏与作品页",
+    "在本地写入采集 JSON、CSV 与汇总文件",
+    "不写入、不发布、不评论、不点赞，除非使用者对单次动作明确授权"
+  ],
+  "costs": {
+    "local": "无服务费用，仅本机算力与网络",
+    "cloud": "不涉及"
+  },
+  "license": "MIT for original contents; ego lite is a separate MIT project by CitroLabs",
+  "validation": {
+    "coverageNote": "样本为该账号最近可加载的 718 / 3095 条（约 23%），非全库",
+    "notCovered": [
+      "未验证超过 800 条以上的连续采集（存在节流与风控风险）",
+      "未验证他人账号（本包只面向本人已登录账号）",
+      "关键词表为通用初版，不同账号需按抽样结果调整",
+      "1.0.1 未重新采集真实抖音账号；页面选择器与登录状态仍需按当前官方说明核验。"
+    ],
+    "submittedVersionEvidence": "采集循环、字段解析、滚动容器、主题打标与时间账已在真实账号的 718 条样本上实跑；写操作边界另外单独实测（点赞可逆双向、评论回复框在位未提交、上传页存在真实 file input）",
+    "scope": "1.0.1 修订采集停滞判断、上限和覆盖率传递；发行前使用离线模拟采集和分类样本回归，不代表本版真实抖音账号的全量验收。"
+  }
+}
